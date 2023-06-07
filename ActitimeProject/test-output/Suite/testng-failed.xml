@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.actitime.testscript.CustomerModule1">
+        <methods>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="createCustomer"/>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.actitime.testscript.CustomerModule1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
